@@ -22,7 +22,6 @@ input:focus {
 }
 
 .container {
-  width: auto;
   display: grid;
   place-items: center;
 }
