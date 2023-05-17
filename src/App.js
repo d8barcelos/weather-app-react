@@ -51,7 +51,7 @@ const App = () => {
       .then((res) => res.json())
       .then((data) => {
         setApiData(null);
-        if (data.cod === 404 || data.cod === 400) {
+        if (data.cod == 404 || data.cod == 400) {
           setShowWeather([
             {
               type: "Not Found",
@@ -75,7 +75,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-800 h-screen grid place-items-center">
+    <div className="bg-gray-800 h-screen grid place-items-center container">
       <div className="bg-white w-96 p-4 rounded-md">
         <div className="flex items-center justify-between">
           <input
@@ -83,7 +83,7 @@ const App = () => {
             ref={inputRef}
             placeholder="Enter Your Location"
             className="text-xl border-b
-          p-1 border-gray-200 font-semibold uppercase flex-1"
+          p-1 border-gray-200 font-semibold flex-1"
           />
           <button onClick={fetchWeather}>
             <img
